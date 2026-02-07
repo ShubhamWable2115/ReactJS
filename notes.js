@@ -48,3 +48,7 @@
 //created this type of structure using the react this means the nested react elements structure
 
 //before JSX we usethe react create element to create the html dom structure 
+
+
+
+//git notes
