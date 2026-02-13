@@ -52,3 +52,7 @@
 
 
 //git notes
+//just adding to git to see the changes in the git and how it works
+//git is a version control system that allows us to track the changes in our code and collaborate with other developers
+//git allows us to create branches and merge them back to the main branch
+//git allows us to revert back to the previous version of our code if we make a mistake
