@@ -29,10 +29,59 @@ import ReactDOM, { createRoot } from "react-dom/client";
 //jsx is not a html inside the javascript it is the html like syntax
 
 //jsx code is transpiled before it reaches the js engine by babel compiler and it will convert into react element 
-const jsxheading =<h1 id="heading" className="heading"> shubham is revising all the concept of the react </h1>
+// const jsxheading =(<h1 id="heading" className="heading"> shubham 
+// is revising all the concept of the react </h1>);
 
-const root=createRoot(document.getElementById("root"));
-root.render(jsxheading);
+// const root=createRoot(document.getElementById("root"));
+// root.render(jsxheading);
 
 //js engine understand only javascript code means ES6 or ecmascript language not the jsx code so we need to convert jsx code 
 // into react element and then react element will convert into html element and show on the screen
+
+//babel is a compiler that converts jsx code into react element and then react element will convert into html element and show on the screen
+
+
+
+//let us start the Component in react
+//two types of component in react
+//1. functional component - new way to write reect coode 
+//2. class component    - old way to write code in react .
+
+
+
+///this is the simple react element
+const heading1 = () => (
+    <h1> helllo from the react element </h1>
+)
+/// this is the functional component in react 
+const HeadingComponent =() =>{
+    return(<h1> this is the react functional component </h1>)
+}
+
+//this is the cll
+const FooterComponent =() => <div>This is the foorter component </div>
+
+
+// by this approach we can render the react element 
+// root.render(heading1);
+
+//by this approach we can render the functional component
+// root.render(<HeadingComponent/>);
+
+
+
+
+// lets do some practice of jsx and react component
+
+const FirstComponent = () =>{
+    return <h1>This is the first component</h1>
+}
+
+const SecondComponent = () =>(
+   <div>
+    <FirstComponent/>
+    <h1>This is the second component</h1>
+   </div>
+);
+
+root.render(<SecondComponent/>);
