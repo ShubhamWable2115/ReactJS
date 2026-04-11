@@ -2,3 +2,72 @@
 #heading{
     color:red;
 }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    border: 1px solid rgb(212, 205, 205);
+}
+
+.headerlogo{
+    width: 100px;
+    height: 100px;
+}
+
+.nav-items>ul{
+    display: flex;
+    font-size: 20px;
+}
+
+.nav-items>ul>li{
+    list-style: none;
+    margin: 0px 10px;
+    padding: 0px 20px;
+    
+}
+.search{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.filter-btn{
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(212, 205, 205);
+    cursor: pointer;
+}
+.body{
+    /* border: 10px solid rgb(212, 205, 205); */
+}
+
+
+
+.restaurantcard{
+    border: 1px solid rgb(212, 205, 205);
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: aliceblue;
+    text-align: start;
+
+}
+
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.restaurantcard:hover{
+    background-color: rgb(212, 205, 205);
+    cursor: pointer ;
+}
+
+
+.reslogo{
+    width: 100%;
+    height: 100px;
+}
