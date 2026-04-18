@@ -56,3 +56,37 @@
 //git is a version control system that allows us to track the changes in our code and collaborate with other developers
 //git allows us to create branches and merge them back to the main branch
 //git allows us to revert back to the previous version of our code if we make a mistake
+
+
+
+///steps to add the commit to the git 
+// firstly check the status of the git with the git ststus / or just type gut init 
+// then if u want tot add all the files then type(git add .) or for the specific file then type 
+// (git add filename)
+//  then to give the comment to recognize afterwords that what changes i have done type git commit -m "commit message" 
+/// after commiting the code simply go to our branch add the file that we change and then push the 
+// code to the remote repository with the command git push origin branch name
+
+//before pushing the 
+
+
+
+
+
+//react has best rendering performance because of the virtual DOM and the reconciliation algorithm
+//It render very fast because it only updates the parts of the DOM that have changed and it does not re-render the entire DOM tree like other frameworks do
+//react uses a virtual DOM to keep track of the changes in the DOM and it uses a reconciliation algorithm to update the DOM efficiently
+//react also uses a diffing algorithm to compare the virtual DOM with the real DOM and it updates only the parts of the DOM that have changed
+
+
+
+///lets start with the useeffect hook in react
+//useEffect is a hook that allows us to perform side effects in our components
+//side effects are the operations that can cause changes in the state of the component or in the DOM
+//useEffect takes two arguments the first argument is a function that contains the side effect and the second argument is an array of dependencies that tells react when to run the side effect
+//if we pass an empty array as the second argument then the side effect will run only once when the component is mounted
+//if we pass an array with some dependencies then the side effect will run every time any of the dependencies change
+//if we do not pass any second argument then the side effect will run every time the component re-renders
+
+
+//first argument is the callback function and the second argument is the dependency array 
