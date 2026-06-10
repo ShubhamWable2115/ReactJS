@@ -86,7 +86,31 @@
 //useEffect takes two arguments the first argument is a function that contains the side effect and the second argument is an array of dependencies that tells react when to run the side effect
 //if we pass an empty array as the second argument then the side effect will run only once when the component is mounted
 //if we pass an array with some dependencies then the side effect will run every time any of the dependencies change
-//if we do not pass any second argument then the side effect will run every time the component re-renders
+//if we do not pass any second argument then the side effect will run every time the component re-renders  
 
 
 //first argument is the callback function and the second argument is the dependency array 
+//if dependency array is empty then the useEffect will is called on initial render only when component is render fo rthe first time.
+//if we add somethin in the dependency array then the useEffect will be called when that dependency changes
+//if we do not add any dependency array then the useEffect will be called on every render of the component.
+
+
+
+
+
+//ROuting 
+//Routing is the process of navigating between different pages in a web application
+//react-router is a library that allows us to implement routing in our react application
+//react-router-dom is a library that allows us to implement routing in our react application for the web
+//react-router-native is a library that allows us to implement routing in our react application for the mobile
+//react-router is a library that allows us to implement routing in our react application for the web and mobile both
+
+// two types of the routing in react
+//1. CLient side Routing 
+//2. Server side Routing
+
+//for routing we need to install the react-router-dom library and then we can use the BrowserRouter, Route, Switch, Link components to implement routing in our application
+// after that import the components that we want to render in the different routes and then use the Route component to define the routes and the components that we want to render in those routes
+// we can also use the Link component to navigate between different routes without reloading the page
+
+// 

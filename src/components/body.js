@@ -5,6 +5,7 @@ import Shimmer from "./Shimmer";
 const Body = () => {
   const [productList, setProductList] = useState([]);
   const[allProducts, setAllProducts] = useState([]);
+  const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
     fetchData();
@@ -29,6 +30,24 @@ const Body = () => {
   return productList.length ===0?<Shimmer/>:(
     <div className="body">
       <div className="search">
+        <input type="text" className="search_box" value={searchText}
+        onChange={(e)=> {
+          setSearchText (e.target.value);
+        }} />
+        <button className="search_btn"
+         onClick={()=>{
+          // search functionality
+          console.log(searchText);
+          const searched = allProducts.filter((products)=>{
+           return products.title.toLowerCase().includes(searchText.toLowerCase());
+          })
+          setProductList(searched);
+
+        }}>
+          Search
+          </button>
+
+
         <button
           className="filter-btn"
           onClick={() => {
@@ -36,17 +55,11 @@ const Body = () => {
               (p) => p.discountPercentage > 10
             );
             setProductList(filtered);
-            setAllProducts(filtered);
           }}
         >
           High Discount Items
         </button>
-        <button
-          className="filter-btn"
-          onClick={() => setProductList(allProducts)}
-        >
-          Show All
-        </button>
+       
       </div>
 
       <div className="res-container">

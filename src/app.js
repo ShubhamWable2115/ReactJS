@@ -94,20 +94,59 @@ import React from "react";
 import ReactDOM, { createRoot } from "react-dom/client";  
  import Header from "./components/header";
  import Body from "./components/body";
+ import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
+ import AboutUS from "./components/AboutUs";
+import ContactUs from "./components/ContactUs";
+import ProductList from "./components/ProductList";
 
 const AppLayout =()=>{
     return (
         <div className="app-layout">
             <Header/>
-            <Body/>
+            <Outlet/>
         </div>
     )
 }
         
+
+const appRouter= createBrowserRouter([
+
+    {
+
+        path : "/",
+        element: <AppLayout/>,
+        children : [
+
+            {
+                path : "/",
+                element: <Body/>,
+            },
+    
+    {
+        path : "/about",
+        element: <AboutUS/>,
+    },
+    {
+          path : "/contact",
+          element: <ContactUs/>,
+    },
+//    {
+//   path: "/carts/:id",
+//   element: <ProductList />
+// }
+
+{
+  path: "/carts/:cartId/product/:productId",
+  element: <ProductList />
+}
+        ],
+        errorElement : <h1> Oops! Something went wrong </h1>
+    },
+]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
-root.render(<AppLayout />);
+root.render(<RouterProvider router={appRouter} /> );
 
 
 // Props are the way to pass data from one component to another component in react
