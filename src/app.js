@@ -130,10 +130,6 @@ const appRouter= createBrowserRouter([
           path : "/contact",
           element: <ContactUs/>,
     },
-//    {
-//   path: "/carts/:id",
-//   element: <ProductList />
-// }
 
 {
   path: "/carts/:cartId/product/:productId",
