@@ -313,6 +313,23 @@ const  resDataList=[
     "link": "https://www.swiggy.com/city/pune/pizza-hut-f-c-road-shivajinagar-rest21001"
   },
   {
+    "id": "21101",
+    "name": "Pizza Hut",
+    "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2026/2/12/dd196a56-86a8-409b-8e29-df0dbbfd76fc_21001.JPG",
+    "locality": "F.C. Road",
+    "areaName": "Shivajinagar",
+    "costForTwo": "₹350 for two",
+    "cuisines": ["Pizzas"],
+    "avgRating": 4.2,
+    "totalRatingsString": "13K+",
+    "deliveryTime": 42,
+    "lastMileTravel": 1.4,
+    "slaString": "40-45 mins",
+    "isOpen": true,
+    "offer": "60% OFF UPTO ₹110",
+    "link": "https://www.swiggy.com/city/pune/pizza-hut-f-c-road-shivajinagar-rest21001"
+  },
+  {
     "id": "33848",
     "name": "The Belgian Waffle Co.",
     "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/17/d30e906d-c10a-4ae9-bb8a-e35f2424cdba_33848.JPG",
